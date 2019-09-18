@@ -5,7 +5,17 @@ An easy-to-use Java-API for accessing the [SMMDB-API](https://github.com/Tarnada
 - Getting and filtering courses from SMMDB (including Super Mario Maker 64 courses)
 - Getting the server stats of SMMDB
 
-### Wiki
-To see how to use this API, visit the Wiki page.
+### Maven
+For binding in the API in your project, add these lines of code between your "**\<dependencies\>**" tags:
+```xml
+<dependency>
+      <groupId>io.fluentcoding</groupId>
+      <artifactId>smmdb-api</artifactId>
+      <version>LATEST</version>
+</dependency>  
+```
 
-For more information about this project, visit the server at https://smmdb.ddns.net.
+### Wiki
+To see more information about the detailed usage of this API, visit [this](google.de) page.
+
+For more information about the smmdb project, visit the server at https://smmdb.ddns.net.
