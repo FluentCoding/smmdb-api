@@ -13,7 +13,6 @@ import org.json.JSONObject;
 
 import java.io.FileOutputStream;
 import java.io.IOException;
-import java.net.MalformedURLException;
 import java.net.URL;
 import java.nio.channels.Channels;
 import java.nio.channels.FileChannel;
@@ -33,6 +32,10 @@ public enum SMMDBApi {
         return new Stats(result.getInt("courses"), result.getInt("courses64"), result.getInt("accounts"));
     }
 
+    public List<Course> getCourses() throws RequestException {
+        return getCourses(null, null);
+    }
+
     public List<Course> getCourses(CourseRequestParams params) throws RequestException {
         return getCourses(params, null);
     }
@@ -45,6 +48,10 @@ public enum SMMDBApi {
         JSONArray result = getCoursesJSON(params, apiKey, false);
 
         return parser.parseCourses(result);
+    }
+
+    public List<Course64> getCourses64() throws RequestException {
+        return getCourses64(null, null);
     }
 
     public List<Course64> getCourses64(CourseRequestParams params) throws RequestException {
