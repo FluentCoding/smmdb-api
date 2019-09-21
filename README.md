@@ -10,13 +10,33 @@ An easy-to-use Java-API for accessing the [SMMDB-API](https://github.com/Tarnada
 - Uploading of courses
 
 ### Maven
-For binding in the API in your project, add these lines of code between your "**\<dependencies\>**" tags:
+For binding in the API in your project with Maven, add these lines of code between your "**\<repositories>**" tags:
+```xml
+<repository>
+      <id>FluentCoding-smmdb-api</id>
+      <url>https://packagecloud.io/FluentCoding/smmdb-api/maven2</url>
+</repository>
+```
+... and these between your "**\<dependencies\>**" tags:
 ```xml
 <dependency>
       <groupId>io.fluentcoding</groupId>
       <artifactId>smmdb-api</artifactId>
       <version>LATEST</version>
 </dependency>  
+```
+
+### Gradle
+For binding in the API in your project with Gradle, add this:
+```gradle
+repositories {
+      // ...
+      maven {
+        url "https://packagecloud.io/FluentCoding/smmdb-api/maven2"
+      }
+}
+// ...
+compile 'io.fluentcoding:smmdbapi:1.0'
 ```
 
 ### Documentation
