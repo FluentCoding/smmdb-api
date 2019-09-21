@@ -19,7 +19,8 @@ For binding in the API in your project, add these lines of code between your "**
 </dependency>  
 ```
 
-### Wiki
-To see more information about the detailed usage of this API, visit [this](google.de) page.
+### Documentation
+To see more information about the detailed usage of this API, visit [this](https://zsuckylp.gitbook.io/workspace/) page.
 
+### More...
 For more information about the smmdb project, visit the server at https://smmdb.ddns.net.
