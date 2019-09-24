@@ -8,6 +8,7 @@ An easy-to-use Java-API for accessing the [SMMDB-API](https://github.com/Tarnada
 
 ### ToDo:
 - Uploading of courses
+- Starring and unstarring courses
 
 ### Maven
 For binding in the API in your project with Maven, add these lines of code between your "**\<repositories>**" tags:
